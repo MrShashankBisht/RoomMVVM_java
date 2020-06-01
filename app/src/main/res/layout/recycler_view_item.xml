@@ -2,10 +2,21 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="5dp">
+    android:background="@color/recycler_item_background"
+    android:layout_marginTop="5dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/textColorWhite"
+        android:layout_alignParentTop="true"
+        android:id="@+id/view_1"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/textColorWhite"
+        android:layout_below="@+id/view_1"
+        android:layout_marginLeft="10dp"
         android:text="name"
         android:id="@+id/word"
         android:textSize="20dp"/>
@@ -14,8 +25,10 @@
         android:layout_height="wrap_content"
         android:text="name"
         android:id="@+id/id"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textColorWhite"
         android:layout_below="@+id/word"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
         android:layout_marginTop="5dp"
         android:textSize="20dp"/>
 </RelativeLayout>
